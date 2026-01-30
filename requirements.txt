@@ -7,9 +7,11 @@ dnspython
 hachoir
 Pillow
 aiohttp
+flask
 pytz
 humanize
 ffmpeg-python
 python-telegram-bot==13.15
 pymongo
 requests
+
