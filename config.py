@@ -19,7 +19,7 @@ class Config(object):
 
     # database config
     DB_NAME = os.environ.get("DB_NAME", "RexBots")     
-    DB_URL  = os.environ.get("DB_URL", "mongodb+srv://otakulordshadow_db_user:0pNf9Ve9LsalouyR@cluster0.hby3kq2.mongodb.net/?appName=Cluster0")
+    DB_URL  = os.environ.get("DB_URL", "mongodb+srv://ANI_OTAKU:ANI_OTAKU@cluster0.t3frstc.mongodb.net/?appName=Cluster0")
  
     # other configs
     ADMIN_URL = "https://t.me/ITSANIMEN"
@@ -144,4 +144,5 @@ Tᴏᴋᴇɴ ᴇxᴘɪʀᴇs ɪɴ 24 ʜᴏᴜʀs...
 # 𝐀𝐍𝐘 𝐈𝐒𝐒𝐔𝐄𝐒 𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐬 𝐂𝐀𝐍 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄
 
 # --
+
 
