@@ -26,13 +26,13 @@ class Config(object):
     DUMP_CHANNEL = os.environ.get("DUMP_CHANNEL", "-1002983564230")
     DUMP = True
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://ibb.co/wZCjM8JZ")
+    START_PIC   = os.environ.get("START_PIC", "https://ibb.co/0pp4v8xM")
     LEADERBOARD_PIC = os.environ.get("LEADERBOARD_PIC", "https://ibb.co/5gVJD0HQ")
     OWNER_ID = int(os.environ.get("OWNER_ID", "7156099919"))
     SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", "-1003435722587"))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003548938800"))
     FSUB_PIC = os.environ.get("FSUB_PIC", "https://ibb.co/qLJPb3M5")
-    VERIFY_PIC=os.environ.get("VERIFY_PIC", "https://ibb.co/0pp4v8xM")
+    VERIFY_PIC=os.environ.get("VERIFY_PIC", "https://ibb.co/wZCjM8JZ")
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "ANIMEXRENAME_BOT")
     LEADERBOARD_DELETE_TIMER = 30
     # wes response configuration     
@@ -140,6 +140,7 @@ Tᴏᴋᴇɴ ᴇxᴘɪʀᴇs ɪɴ 24 ʜᴏᴜʀs...
 # 𝐀𝐍𝐘 𝐈𝐒𝐒𝐔𝐄𝐒 𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐬 𝐂𝐀𝐍 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄
 
 # --
+
 
 
 
