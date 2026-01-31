@@ -707,7 +707,7 @@ async def auto_rename_files(client, message):
 
             if user_id in active_sequences:
                 active_sequences[user_id].append(file_info)
-                reply_msg = await message.reply_text("Wᴇᴡ...ғɪʟᴇs ʀᴇᴄᴇɪᴠᴇᴅ ɴᴏᴡ ᴜsᴇ /end_sequence ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs...!!")
+                reply_msg = await message.reply_text("...ғɪʟᴇs ʀᴇᴄᴇɪᴠᴇᴅ ɴᴏᴡ ᴜsᴇ /end_sequence ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs...!!")
                 message_ids[user_id].append(reply_msg.id)
                 return
 
@@ -808,7 +808,7 @@ async def auto_rename_files(client, message):
             os.makedirs(os.path.dirname(metadata_path), exist_ok=True)
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-            msg = await message.reply_text("Wᴇᴡ... Iᴀm ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ғɪʟᴇ...!!")
+            msg = await message.reply_text("... ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ғɪʟᴇ...!!")
             await message.reply_chat_action(ChatAction.PLAYING)
 
             try:
@@ -816,7 +816,7 @@ async def auto_rename_files(client, message):
                     message,
                     file_name=download_path,
                     progress=progress_for_pyrogram,
-                    progress_args=("Dᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ ᴅᴜᴅᴇ...!!", msg, time.time())
+                    progress_args=("Dᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ...!!", msg, time.time())
                 )
             except Exception as e:
                 await msg.edit(f"Dᴏᴡɴʟᴏᴀᴅ ғᴀɪʟᴇᴅ: {e}")
@@ -844,7 +844,7 @@ async def auto_rename_files(client, message):
             
             # Only add metadata if not already converted (to avoid double processing)
             if not file_extension.lower() in ['.mp4', '.m4v']:
-                await msg.edit("Nᴏᴡ ᴀᴅᴅɪɴɢ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴅᴜᴅᴇ...!!")
+                await msg.edit("Nᴏᴡ ᴀᴅᴅɪɴɢ ᴍᴇᴛᴀᴅᴀᴛᴀ...!!")
                 await message.reply_chat_action(ChatAction.PLAYING)
                 try:
                     await add_metadata(file_path, metadata_path, user_id)
@@ -852,7 +852,7 @@ async def auto_rename_files(client, message):
                 except Exception as e:
                     logger.error(f"Failed to add metadata: {e}")
 
-            await msg.edit("Wᴇᴡ... Iᴀm Uᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ғɪʟᴇ...!!")
+            await msg.edit("... Iᴀm Uᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ғɪʟᴇ...!!")
             await message.reply_chat_action(ChatAction.PLAYING)
             
             try:
@@ -906,7 +906,7 @@ async def auto_rename_files(client, message):
                 'caption': caption,
                 'thumb': ph_path,
                 'progress': progress_for_pyrogram,
-                'progress_args': ("Uᴘʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ ᴅᴜᴅᴇ...!!", msg, time.time())
+                'progress_args': ("Uᴘʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ...!!", msg, time.time())
             }
 
             sent_message = None
@@ -1151,4 +1151,5 @@ async def convert_to_mkv(input_path, output_path, user_id):
 # 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐀𝐁𝐇𝐈
 # 𝐓𝐆 𝐈𝐃 : @𝐂𝐋𝐔𝐓𝐂𝐇𝟎𝟎𝟖
 # 𝐀𝐍𝐘 𝐈𝐒𝐒𝐔𝐄𝐒 𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐬 𝐂𝐀𝐍 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄
+
 # ----------------------------------------
