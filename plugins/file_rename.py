@@ -639,11 +639,11 @@ def extract_quality(filename):
 async def start_sequence(client, message: Message):
     user_id = message.from_user.id
     if user_id in active_sequences:
-        await message.reply_text("Hᴇʏ ᴅᴜᴅᴇ...!! A sᴇǫᴜᴇɴᴄᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴇ! Usᴇ /end_sequence ᴛᴏ ᴇɴᴅ ɪᴛ.")
+        await message.reply_text("Hᴇʏ...!! A sᴇǫᴜᴇɴᴄᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴇ! Usᴇ /end_sequence ᴛᴏ ᴇɴᴅ ɪᴛ.")
     else:
         active_sequences[user_id] = []
         message_ids[user_id] = []
-        msg = await message.reply_text("Sᴇǫᴜᴇɴᴄᴇ sᴛᴀʀᴛᴇᴅ! Sᴇɴᴅ ʏᴏᴜʀ ғɪʟᴇs ɴᴏᴡ ʙʀᴏ....Fᴀsᴛ")
+        msg = await message.reply_text("Sᴇǫᴜᴇɴᴄᴇ sᴛᴀʀᴛᴇᴅ! Sᴇɴᴅ ʏᴏᴜʀ ғɪʟᴇs ɴᴏᴡ....Fᴀsᴛ")
         message_ids[user_id].append(msg.id)
 
 @Client.on_message(filters.private & (filters.document | filters.video | filters.audio))
@@ -852,7 +852,7 @@ async def auto_rename_files(client, message):
                 except Exception as e:
                     logger.error(f"Failed to add metadata: {e}")
 
-            await msg.edit("... Iᴀm Uᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ғɪʟᴇ...!!")
+            await msg.edit("... Uᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ғɪʟᴇ...!!")
             await message.reply_chat_action(ChatAction.PLAYING)
             
             try:
@@ -1153,3 +1153,4 @@ async def convert_to_mkv(input_path, output_path, user_id):
 # 𝐀𝐍𝐘 𝐈𝐒𝐒𝐔𝐄𝐒 𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐬 𝐂𝐀𝐍 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄
 
 # ----------------------------------------
+
